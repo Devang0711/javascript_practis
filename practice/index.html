@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let num = prompt("Enter any number");
+      num = parseFloat(num);
+
+      if (num > 0) {
+        console.log("This number is Positive");
+      } else if (num < 0) {
+        console.log("This number is Negative");
+      } else {
+        console.log("This number is Neutral");
+      }
+
+
+
+      let day = 5;
+
+switch (day) {
+  case 1:
+    console.log("Sunday");
+    break;
+  case 2:
+    console.log("Monday");
+    break;
+  case 3:
+    console.log("Tuesday");
+    break;
+  case 4:
+    console.log("Wednesday");
+    break;
+  case 5:
+    console.log("Thursday");
+    break;
+  case 6:
+    console.log("Friday");
+    break;
+  case 7:
+    console.log("Saturday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+
+// create a password 
+
+let username = 'admin', password = '1234';
+if (username === 'admin' && password === '12355') {
+  console.log("Access granted");
+} else {
+  console.log("Access denied");
+}
+
+
+
+
+let email = "devang@example.com";
+if (email.includes("@")) {
+  console.log("Valid email");
+} else {
+  console.log("Invalid email");
+}
+
+
+// This code can be used in forms such as login, registration, etc., where you need to validate that the given string contains only alphabets.
+
+let str = "Hello";
+if (/^[A-Za-z]+$/.test(str)) {
+  console.log("Contains only alphabets");
+} else {
+  console.log("Contains non-alphabet characters");
+}  
+
+
+
+
+// Function to simulate the telecom service
+function telecomService() {
+    let languageChoice, rechargeChoice;
+
+    // Main menu for language selection
+    console.log("Press 1 for English");
+    console.log("Press 2 for Hindi");
+    console.log("Press 3 for Gujarati");
+    languageChoice = parseInt(prompt("Enter your choice:"));
+
+    switch (languageChoice) {
+        case 1: // English
+            console.log("\nPress 1 for Internet Recharge");
+            console.log("Press 2 for Top-up Recharge");
+            console.log("Press 3 for Special Recharge");
+            rechargeChoice = parseInt(prompt("Enter your choice:"));
+
+            switch (rechargeChoice) {
+                case 1:
+                    console.log("\nYou have successfully done an Internet Recharge.");
+                    break;
+                case 2:
+                    console.log("\nYou have successfully done a Top-up Recharge.");
+                    break;
+                case 3:
+                    console.log("\nYou have successfully done a Special Recharge.");
+                    break;
+                default:
+                    console.log("\nInvalid choice for recharge.");
+                    break;
+            }
+            break;
+
+        case 2: // Hindi
+            console.log("\nInternet Recharge ke liye 1 dabaiye");
+            console.log("Top-up Recharge ke liye 2 dabaiye");
+            console.log("Special Recharge ke liye 3 dabaiye");
+            rechargeChoice = parseInt(prompt("Enter your choice:"));
+
+            switch (rechargeChoice) {
+                case 1:
+                    console.log("\nAapne safaltapurvak Internet Recharge kar liya hai.");
+                    break;
+                case 2:
+                    console.log("\nAapne safaltapurvak Top-up Recharge kar liya hai.");
+                    break;
+                case 3:
+                    console.log("\nAapne safaltapurvak Special Recharge kar liya hai.");
+                    break;
+                default:
+                    console.log("\nInvalid choice for recharge.");
+                    break;
+            }
+            break;
+
+        case 3: // Gujarati
+            console.log("\nInternet Recharge mate 1 dabavo");
+            console.log("Top-up Recharge mate 2 dabavo");
+            console.log("Special Recharge mate 3 dabavo");
+            rechargeChoice = parseInt(prompt("Enter your choice:"));
+
+            switch (rechargeChoice) {
+                case 1:
+                    console.log("\nTame safaltapurvak Internet Recharge karyu chhe.");
+                    break;
+                case 2:
+                    console.log("\nTame safaltapurvak Top-up Recharge karyu chhe.");
+                    break;
+                case 3:
+                    console.log("\nTame safaltapurvak Special Recharge karyu chhe.");
+                    break;
+                default:
+                    console.log("\nInvalid choice for recharge.");
+                    break;
+            }
+            break;
+
+        default:
+            console.log("\nInvalid choice for language.");
+            break;
+    }
+}
+
+// Run the telecom service program
+telecomService();
+
+
+
+    </script>
+  </body>
+</html>

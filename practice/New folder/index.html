@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+     function service() {
+    let lang_choise, recharge_choice;
+
+    console.log("Press 1 for English");
+    console.log("Press 2 for Hindi");
+    console.log("Press 3 for Gujarati");
+    lang_choise = parseInt(prompt("Enter your choice:"));
+
+    switch (lang_choise) {
+        case 1: 
+            console.log("\nPress 1 for Internet Recharge");
+            console.log("Press 2 for Top-up Recharge");
+            console.log("Press 3 for Special Recharge");
+            recharge_choice = parseInt(prompt("Enter your choice:"));
+
+            switch (recharge_choice) {
+                case 1:
+                    console.log("\nYou have successfully done an Internet Recharge.");
+                    break;
+                case 2:
+                    console.log("\nYou have successfully done a Top-up Recharge.");
+                    break;
+                case 3:
+                    console.log("\nYou have successfully done a Special Recharge.");
+                    break;
+                default:
+                    console.log("\nInvalid choice for recharge.");
+                    break;
+            }
+            break;
+
+        case 2: 
+            console.log("\nInternet Recharge ke liye 1 dabaiye");
+            console.log("Top-up Recharge ke liye 2 dabaiye");
+            console.log("Special Recharge ke liye 3 dabaiye");
+            recharge_choice = parseInt(prompt("Enter your choice:"));
+
+            switch (recharge_choice) {
+                case 1:
+                    console.log("\nAapne safaltapurvak Internet Recharge kar liya hai.");
+                    break;
+                case 2:
+                    console.log("\nAapne safaltapurvak Top-up Recharge kar liya hai.");
+                    break;
+                case 3:
+                    console.log("\nAapne safaltapurvak Special Recharge kar liya hai.");
+                    break;
+                default:
+                    console.log("\nInvalid choice for recharge.");
+                    break;
+            }
+            break;
+
+        case 3:
+            console.log("\nInternet Recharge mate 1 dabavo");
+            console.log("Top-up Recharge mate 2 dabavo");
+            console.log("Special Recharge mate 3 dabavo");
+            lang_choise = parseInt(prompt("Enter your choice:"));
+
+            switch (recharge_choice) {
+                case 1:
+                    console.log("\nTame safaltapurvak Internet Recharge karyu chhe.");
+                    break;
+                case 2:
+                    console.log("\nTame safaltapurvak Top-up Recharge karyu chhe.");
+                    break;
+                case 3:
+                    console.log("\nTame safaltapurvak Special Recharge karyu chhe.");
+                    break;
+                default:
+                    console.log("\nInvalid choice for recharge.");
+                    break;
+            }
+            break;
+
+        default:
+            console.log("\nInvalid choice for language.");
+            break;
+    }
+}
+
+service();
+
+
+
+    </script>
+  </body>
+</html>
